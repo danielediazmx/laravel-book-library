@@ -13,4 +13,9 @@ class Category extends Model
 
     protected $fillable = ['name', 'description',];
     protected $dates = ['deleted_at', 'created_at', 'updated_at'];
+
+    public function books()
+    {
+        return $this->hasMany(Book::class, 'category_id', 'id');
+    }
 }
