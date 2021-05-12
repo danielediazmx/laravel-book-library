@@ -14,4 +14,5 @@ Step by step
 - Go inside the folder and rename the .env.example to .env
 - Configure the .env file with your own settings
 - In the console run this command:  composer install
-- When the composer install is done you can run php artisan serve to start the server.
+- After that run this command: php artisan migrate
+- Everything is done you can run php artisan serve in the console to start the server.
