@@ -10,7 +10,7 @@ Requirements:
 
 Step by step
 
-- Clone the project into your computer git this command: git clone https://github.com/danielediazmx/laravel-book-library.git
+- Clone the project into your computer with this command: git clone https://github.com/danielediazmx/laravel-book-library.git
 - Go inside the folder and rename the .env.example to .env
 - Configure the .env file with your own settings
 - In the console run this command:  composer install
