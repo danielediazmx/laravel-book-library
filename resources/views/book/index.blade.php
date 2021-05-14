@@ -78,7 +78,8 @@
         class="modal opacity-0 pointer-events-none absolute w-full h-full top-0 left-0 flex items-center justify-center">
         <div class="modal-overlay absolute w-full h-full bg-black opacity-25 top-0 left-0 cursor-pointer"></div>
         <div class="absolute w-1/2 h-32 bg-white rounded-sm shadow-lg flex items-center justify-center text-2xl">
-            <div class="modal-button-confirm inline-flex text-right px-4 py-2 bg-pink-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
+            <div
+                class="modal-button-confirm inline-flex text-right px-4 py-2 bg-pink-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
                 {{ __('Confirm') }}
             </div>
         </div>
@@ -105,7 +106,7 @@
         }
 
         function confirmModal() {
-            location.href = "{{ route('book.change_availability', $book->id) }}"
+            location.href = `/book/change_availability/${selected_book}`;
         }
     </script>
 </x-app-layout>
